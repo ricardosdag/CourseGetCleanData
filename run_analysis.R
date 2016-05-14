@@ -1,7 +1,11 @@
-# 1. Create Folder 
+# 1. Create Folders 
 
-MyPath <- "/Users/ricardodagnino/CourseGetCleanData"
-setwd(MyPath)
+MyFolder1 <- "/Users/ricardodagnino"
+setwd(MyFolder1)
+if(!file.exists("./CourseGetCleanData")){dir.create("./CourseGetCleanData")}
+
+MyFolder2 <- "/Users/ricardodagnino/CourseGetCleanData"
+setwd(MyFolder2)
 if(!file.exists("./data")){dir.create("./data")}
 
 # 1.1 Download data
@@ -100,7 +104,7 @@ head(str(dataTable),6)
 
 ##  8.1. write to text file results path
 
-setwd(MyPath)
+setwd(MyFolder2)
 if(!file.exists("./results")){dir.create("./results")}
 setwd("/Users/ricardodagnino/CourseGetCleanData/results")
 write.table(dataTable, "TidyData.txt", row.name=FALSE)

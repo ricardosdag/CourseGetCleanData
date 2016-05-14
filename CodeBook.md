@@ -1,4 +1,4 @@
-This is the structure of RunAnalysis.R and de TidyData.txt
+This is the structure of RunAnalysis.R and TidyData.txt
 
 ##RunAnalysis.R
 
